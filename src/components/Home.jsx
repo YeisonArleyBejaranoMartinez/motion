@@ -1,11 +1,14 @@
 import React from 'react'
 import{motion} from "framer-motion"
 import {Link} from "react-router-dom"
+import Colosal from './Colosal'
+
 
 const Home = () => {
 
   return (
     <div className='home-container'>
+      <Colosal/>
       <motion.h1
         initial={{y:-10}}
         animate={{
@@ -18,10 +21,11 @@ const Home = () => {
           }
         }}
       >
-      <Link to="/About"> &#8659;</Link> 
+      
+      <Link className='link' to="/About"> &#8659;</Link> 
       
       </motion.h1>     
-  </div>
+    </div>
   )
 }
 
